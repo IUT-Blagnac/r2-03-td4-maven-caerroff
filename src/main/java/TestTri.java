@@ -35,11 +35,11 @@ public class TestTri {
         Etudiant random = new Etudiant();
         Random rnd = new Random();
         String[] alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
-        for(int i=0; i<rnd.nextInt(8,12); i++) {
-            random.nom += alphabet[rnd.nextInt(0,26)];
+        for(int i=0; i<rnd.nextInt(12); i++) {
+            random.nom += alphabet[rnd.nextInt(26)];
         }
-        for(int i=0; i<rnd.nextInt(8,12); i++) {
-            random.prenom += alphabet[rnd.nextInt(0,26)];
+        for(int i=0; i<rnd.nextInt(12); i++) {
+            random.prenom += alphabet[rnd.nextInt(26)];
         }
         return random;
     }
